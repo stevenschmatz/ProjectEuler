@@ -1,0 +1,159 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      4929,        150]
+NotebookOptionsPosition[      4413,        128]
+NotebookOutlinePosition[      4769,        144]
+CellTagsIndexPosition[      4726,        141]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+  "myDir", "=", 
+   "\"\</Users/stevenschmatz/Documents/Mathematica Documents\>\""}], ";", 
+  RowBox[{"SetDirectory", "[", "myDir", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mylist", ":=", 
+   RowBox[{"Sort", "[", 
+    RowBox[{"StringSplit", "[", 
+     RowBox[{
+      RowBox[{"Import", "[", "\"\<names.txt\>\"", "]"}], ",", 
+      "\"\<\\\",\\\"\>\""}], "]"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.578429874639879*^9, 3.578429925662426*^9}, {
+  3.578430280519291*^9, 3.5784302844385138`*^9}, {3.5784307031815166`*^9, 
+  3.57843070397301*^9}, {3.578430746767057*^9, 3.57843079640483*^9}, {
+  3.578430934333542*^9, 3.578430944403782*^9}, {3.5784309982873783`*^9, 
+  3.578431002941183*^9}, {3.57843153218482*^9, 3.578431533853869*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Map", "[", 
+   RowBox[{"ToUpperCase", ",", "mylist"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"listTransform", "[", "n_", "]"}], ":=", 
+   RowBox[{"Map", "[", 
+    RowBox[{"ToUpperCase", ",", 
+     RowBox[{"Sort", "[", "n", "]"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"newList", ":=", 
+   RowBox[{"listTransform", "[", "mylist", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"wordValue", "[", "word_", "]"}], ":=", 
+   RowBox[{"Total", "[", 
+    RowBox[{
+     RowBox[{"ToCharacterCode", "[", 
+      RowBox[{"StringTake", "[", 
+       RowBox[{"word", ",", 
+        RowBox[{"StringLength", "[", "word", "]"}]}], "]"}], "]"}], "-", 
+     "64"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"count", " ", "=", " ", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", "1"}], ",", 
+    RowBox[{"i", "<=", 
+     RowBox[{"Length", "[", "newList", "]"}]}], ",", 
+    RowBox[{"i", "++"}], ",", 
+    RowBox[{"count", "+=", 
+     RowBox[{"i", "*", 
+      RowBox[{"(", 
+       RowBox[{"wordValue", "[", 
+        RowBox[{"newList", "[", 
+         RowBox[{"[", "i", "]"}], "]"}], "]"}], ")"}]}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", "count"}], "Input",
+ CellChangeTimes->{{3.578428862905437*^9, 3.5784288816605663`*^9}, {
+  3.578429619886591*^9, 3.578429647237309*^9}, {3.578429777216075*^9, 
+  3.57842989451027*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"numbers", ":=", 
+   RowBox[{"Map", "[", 
+    RowBox[{"wordValue", ",", "mylist"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.5784315485838633`*^9, 3.578431558428109*^9}, {
+  3.578431599966565*^9, 3.578431600700677*^9}, {3.578431898949287*^9, 
+  3.578431900676848*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"count", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"f", "[", "list_", "]"}], ":=", "\[IndentingNewLine]", 
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", "1"}], ",", 
+    RowBox[{"i", "\[LessEqual]", 
+     RowBox[{"Length", "[", "list", "]"}]}], ",", 
+    RowBox[{"i", "++"}], ",", 
+    RowBox[{"count", "+=", 
+     RowBox[{"i", "*", 
+      RowBox[{"list", "[", 
+       RowBox[{"[", "i", "]"}], "]"}]}]}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.578431603646287*^9, 3.5784318802294817`*^9}, {
+  3.5784319624315977`*^9, 3.578431964781404*^9}, {3.5784322572157497`*^9, 
+  3.578432273357936*^9}, {3.578432485615752*^9, 3.578432486453946*^9}, {
+  3.578432633879232*^9, 3.578432639789761*^9}}],
+
+Cell[BoxData[
+ RowBox[{"f", "[", "numbers", "]"}]], "Input",
+ CellChangeTimes->{{3.578432030388028*^9, 3.5784320508757277`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["count"], "Input",
+ CellChangeTimes->{{3.5784320532181263`*^9, 3.5784320536148643`*^9}}],
+
+Cell[BoxData["871092982"], "Output",
+ CellChangeTimes->{
+  3.578432053923422*^9, {3.5784322623181553`*^9, 3.5784322769203777`*^9}, {
+   3.578432568950685*^9, 3.578432588027495*^9}, 3.5784326435265913`*^9}]
+}, Open  ]]
+},
+WindowSize->{740, 652},
+WindowMargins->{{Automatic, -8}, {21, Automatic}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 797, 17, 63, "Input"],
+Cell[1357, 39, 1502, 43, 148, "Input"],
+Cell[2862, 84, 309, 7, 28, "Input"],
+Cell[3174, 93, 758, 18, 63, "Input"],
+Cell[3935, 113, 128, 2, 28, "Input"],
+Cell[CellGroupData[{
+Cell[4088, 119, 101, 1, 28, "Input"],
+Cell[4192, 122, 205, 3, 28, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

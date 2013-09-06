@@ -1,0 +1,199 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6828,        189]
+NotebookOptionsPosition[      6387,        169]
+NotebookOutlinePosition[      6742,        185]
+CellTagsIndexPosition[      6699,        182]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"inWords", "[", "n_", "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"r", ",", 
+       RowBox[{"numNames", "=", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<\>\"", ",", "\"\< one\>\"", ",", "\"\< two\>\"", ",", 
+          "\"\< three\>\"", ",", "\"\< four\>\"", ",", "\"\< five\>\"", ",", 
+          "\"\< six\>\"", ",", "\"\< seven\>\"", ",", "\"\< eight\>\"", ",", 
+          "\"\< nine\>\""}], "}"}]}], ",", 
+       RowBox[{"teenNames", "=", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\< ten\>\"", ",", "\"\< eleven\>\"", ",", "\"\< twelve\>\"", ",", 
+          "\"\< thirteen\>\"", ",", "\"\< fourteen\>\"", ",", 
+          "\"\< fifteen\>\"", ",", "\"\< sixteen\>\"", ",", 
+          "\"\< seventeen\>\"", ",", "\"\< eighteen\>\"", ",", 
+          "\"\< nineteen\>\""}], "}"}]}], ",", 
+       RowBox[{"tensNames", "=", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<\>\"", ",", "\"\< ten\>\"", ",", "\"\< twenty\>\"", ",", 
+          "\"\< thirty\>\"", ",", "\"\< forty\>\"", ",", "\"\< fifty\>\"", 
+          ",", "\"\< sixty\>\"", ",", "\"\< seventy\>\"", ",", 
+          "\"\< eighty\>\"", ",", "\"\< ninety\>\""}], "}"}]}], ",", 
+       RowBox[{"decimals", "=", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<\>\"", ",", "\"\< thousand\>\"", ",", "\"\< million\>\"", ",", 
+          "\"\< billion\>\"", ",", "\"\< trillion\>\"", ",", 
+          "\"\< quadrillion\>\"", ",", "\"\< quintillion\>\"", ",", 
+          "\"\< sextillion\>\"", ",", "\"\< septillion\>\"", ",", 
+          "\"\< octillion\>\"", ",", "\"\< nonillion\>\"", ",", 
+          "\"\< decillion\>\"", ",", "\"\< undecillion\>\"", ",", 
+          "\"\< duodecillion\>\"", ",", "\"\< tredecillion\>\"", ",", 
+          "\"\< quattuordecillion\>\"", ",", "\"\< quindecillion\>\"", ",", 
+          "\"\< sexdecillion\>\"", ",", "\"\< septendecillion\>\"", ",", 
+          "\"\< octodecillion\>\"", ",", "\"\< Novemdecillion\>\"", ",", 
+          "\"\< Vigintillion\>\"", ",", "\"\< 66illion\>\"", ",", 
+          "\"\< 69illion\>\""}], "}"}]}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"r", "=", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{"#", "\[NotEqual]", "0"}], ",", 
+            RowBox[{
+             RowBox[{"numNames", "[", 
+              RowBox[{"[", 
+               RowBox[{"#", "+", "1"}], "]"}], "]"}], "<>", 
+             "\"\< hundred\>\"", "<>", 
+             RowBox[{"If", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"#2", "\[NotEqual]", "0"}], "||", 
+                RowBox[{"#3", "\[NotEqual]", "0"}]}], ",", "\"\< and\>\"", 
+               ",", "\"\<\>\""}], "]"}]}], ",", "\"\<\>\""}], "]"}], "<>", 
+          RowBox[{"Switch", "[", 
+           RowBox[{"#2", ",", "0", ",", 
+            RowBox[{"numNames", "[", 
+             RowBox[{"[", 
+              RowBox[{"#3", "+", "1"}], "]"}], "]"}], ",", "1", ",", 
+            RowBox[{"teenNames", "[", 
+             RowBox[{"[", 
+              RowBox[{"#3", "+", "1"}], "]"}], "]"}], ",", "_", ",", 
+            RowBox[{
+             RowBox[{"tensNames", "[", 
+              RowBox[{"[", 
+               RowBox[{"#2", "+", "1"}], "]"}], "]"}], "<>", 
+             RowBox[{"numNames", "[", 
+              RowBox[{"[", 
+               RowBox[{"#3", "+", "1"}], "]"}], "]"}]}]}], "]"}]}], "&"}], "@@@", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"PadLeft", "[", 
+            RowBox[{
+             RowBox[{"FromDigits", "/@", 
+              RowBox[{"Characters", "@", 
+               RowBox[{"StringReverse", "@", "#"}]}]}], ",", "3"}], "]"}], 
+           "&"}], "/@", 
+          RowBox[{"StringCases", "[", 
+           RowBox[{
+            RowBox[{"StringReverse", "@", 
+             RowBox[{"IntegerString", "@", "n"}]}], ",", 
+            RowBox[{"RegularExpression", "[", "\"\<\\\\d{1,3}\>\"", "]"}]}], 
+           "]"}]}], ")"}]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"StringJoin", "@", 
+       RowBox[{"Reverse", "@", 
+        RowBox[{"MapThread", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"#", "\[NotEqual]", "\"\<\>\""}], ",", 
+             RowBox[{"StringJoin", "[", "##", "]"}], ",", "\"\<\>\""}], "]"}],
+            "&"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"r", ",", 
+            RowBox[{"Take", "[", 
+             RowBox[{"decimals", ",", 
+              RowBox[{"Length", "@", "r"}]}], "]"}]}], "}"}]}], "]"}]}]}]}]}],
+     "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.5798560187254353`*^9, 3.579856018734105*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"value", "[", "n_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"StringLength", "[", 
+    RowBox[{"StringReplace", "[", 
+     RowBox[{
+      RowBox[{"StringTrim", "[", 
+       RowBox[{"ToString", "[", 
+        RowBox[{
+         RowBox[{"inWords", "[", "n", "]"}], ",", "InputForm"}], "]"}], "]"}],
+       ",", 
+      RowBox[{"\"\< \>\"", "\[Rule]", "\"\<\>\""}]}], "]"}], "]"}], "-", 
+   "2"}]}]], "Input",
+ CellChangeTimes->{{3.579856031883265*^9, 3.579856037042205*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"sum", ":=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "1"}], ",", 
+   RowBox[{"i", "\[LessEqual]", "1000"}], ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{"sum", "+=", 
+    RowBox[{"value", "[", "i", "]"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.579856148700148*^9, 3.579856174561611*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["sum"], "Input",
+ CellChangeTimes->{{3.5798561781994*^9, 3.579856178482381*^9}}],
+
+Cell[BoxData["21124"], "Output",
+ CellChangeTimes->{3.5798561788446074`*^9}]
+}, Open  ]]
+},
+WindowSize->{740, 652},
+WindowMargins->{{86, Automatic}, {1, Automatic}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 4732, 110, 403, "Input"],
+Cell[5292, 132, 498, 14, 63, "Input"],
+Cell[5793, 148, 381, 10, 46, "Input"],
+Cell[CellGroupData[{
+Cell[6199, 162, 93, 1, 28, "Input"],
+Cell[6295, 165, 76, 1, 28, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

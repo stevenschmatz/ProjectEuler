@@ -1,0 +1,121 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      2877,        111]
+NotebookOptionsPosition[      2166,         80]
+NotebookOutlinePosition[      2521,         96]
+CellTagsIndexPosition[      2478,         93]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"IntegerLength", "[", 
+  RowBox[{"Fibonacci", "[", "n", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5784285775022917`*^9, 3.578428630990181*^9}}],
+
+Cell[BoxData["2090"], "Output",
+ CellChangeTimes->{{3.5784285827759647`*^9, 3.5784286099042387`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "1"}], ",", 
+   RowBox[{
+    RowBox[{"IntegerLength", "[", 
+     RowBox[{"Fibonacci", "[", "i", "]"}], "]"}], "\[LessEqual]", "1000"}], 
+   ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"IntegerLength", "[", 
+       RowBox[{"Fibonacci", "[", "i", "]"}], "]"}], "\[Equal]", "1000"}], ",", 
+     RowBox[{"Print", "[", "i", "]"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.578428632155425*^9, 3.578428687173444*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["4782"], "Print",
+ CellChangeTimes->{3.578428687933649*^9}],
+
+Cell[BoxData["4783"], "Print",
+ CellChangeTimes->{3.5784286879346*^9}],
+
+Cell[BoxData["4784"], "Print",
+ CellChangeTimes->{3.578428687936491*^9}],
+
+Cell[BoxData["4785"], "Print",
+ CellChangeTimes->{3.578428687937455*^9}],
+
+Cell[BoxData["4786"], "Print",
+ CellChangeTimes->{3.5784286879387293`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"IntegerLength", "[", 
+  RowBox[{"Fibonacci", "[", "4782", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.578428692104232*^9, 3.578428711452873*^9}}],
+
+Cell[BoxData["1000"], "Output",
+ CellChangeTimes->{{3.578428697310104*^9, 3.578428711901905*^9}}]
+}, Open  ]]
+},
+WindowSize->{1280, 752},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 170, 3, 28, "Input"],
+Cell[752, 27, 101, 1, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[890, 33, 543, 15, 28, "Input"],
+Cell[CellGroupData[{
+Cell[1458, 52, 72, 1, 21, "Print"],
+Cell[1533, 55, 70, 1, 21, "Print"],
+Cell[1606, 58, 72, 1, 21, "Print"],
+Cell[1681, 61, 72, 1, 21, "Print"],
+Cell[1756, 64, 74, 1, 21, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1879, 71, 171, 3, 28, "Input"],
+Cell[2053, 76, 97, 1, 62, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

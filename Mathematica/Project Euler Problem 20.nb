@@ -1,0 +1,356 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     14628,        347]
+NotebookOptionsPosition[     13328,        300]
+NotebookOutlinePosition[     13705,        317]
+CellTagsIndexPosition[     13662,        314]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ SuperscriptBox["2", "1000"]], "Input",
+ CellChangeTimes->{{3.5722997992432613`*^9, 3.572299801241922*^9}}],
+
+Cell[BoxData[
+ RowBox[{"x", ":=", 
+  RowBox[{"100", "!"}]}]], "Input",
+ CellChangeTimes->{{3.572299857122918*^9, 3.572299858290522*^9}, {
+  3.572360051393856*^9, 3.572360060290086*^9}}],
+
+Cell[BoxData["x"], "Input",
+ CellChangeTimes->{3.5722998603225727`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["x"], "Input",
+ CellChangeTimes->{{3.5723600619306192`*^9, 3.572360076597513*^9}}],
+
+Cell[BoxData[\
+"93326215443944152681699238856266700490715968264381621468592963895217599993229\
+915608941463976156518286253697920827223758251185210916864000000000000000000000\
+000"], "Output",
+ CellChangeTimes->{{3.57236006201081*^9, 3.572360076991948*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "mylist", "]"}]], "Input",
+ CellChangeTimes->{{3.572299804908599*^9, 3.5722999101543083`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mylist", "=", 
+  RowBox[{"{", "}"}]}]], "Input",
+ CellChangeTimes->{{3.5722999127534647`*^9, 3.572299914729401*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{3.572299915259606*^9, 3.5723002084004507`*^9, 
+  3.5723600990767517`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"string", ":=", 
+  "\"\<93326215443944152681699238856266700490715968264381621468592963895217599\
+993229915608941463976156518286253697920827223758251185210916864000000000000000\
+000000000\>\""}]], "Input",
+ CellChangeTimes->{{3.572300166907736*^9, 3.57230017015127*^9}, 
+   3.5723600839608727`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"digit", "[", "x_", "]"}], ":=", 
+  RowBox[{"ToExpression", "[", 
+   RowBox[{"StringTake", "[", 
+    RowBox[{"string", ",", 
+     RowBox[{"{", "x", "}"}]}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.572300095335181*^9, 3.572300095610376*^9}, {
+  3.572300356126266*^9, 3.572300385354673*^9}, {3.572300712350594*^9, 
+  3.5723007140506763`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "1"}], ",", 
+   RowBox[{"i", "\[LessEqual]", "302"}], ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{"AppendTo", "[", 
+    RowBox[{"mylist", ",", 
+     RowBox[{"digit", "[", "i", "]"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.572300558339429*^9, 3.5723005877906513`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"StringTake", "::", "take"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Cannot take positions \[NoBreak]\\!\\(159\\)\[NoBreak] \
+through \[NoBreak]\\!\\(159\\)\[NoBreak] in \
+\\\"\[NoBreak]\\!\\(\\\"\
+933262154439441526816992388562667004907159682643816214685929638952175999932299\
+156089414639761565182862536979208272237582511852109168640000000000000000000000\
+00\\\"\\)\[NoBreak]\\\". \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/StringTake\\\", ButtonNote -> \\\"StringTake::take\
+\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.572360087041193*^9, 3.572360102778493*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ToExpression", "::", "notstrbox"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], \
+"\<\"\[NoBreak]\\!\\(StringTake[\\(\\(\\\"\
+933262154439441526816992388562667004907159682643816214685929638952175999932299\
+156089414639761565182862536979208272237582511852109168640000000000000000000000\
+00\\\", \\(\\({159}\\)\\)\\)\\)]\\)\[NoBreak] is not a string or a box. \
+ToExpression can only interpret strings or boxes as Mathematica input. \\!\\(\
+\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ToExpression/notstrbox\\\", ButtonNote -> \
+\\\"ToExpression::notstrbox\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.572360087041193*^9, 3.5723601028183727`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"StringTake", "::", "take"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Cannot take positions \[NoBreak]\\!\\(160\\)\[NoBreak] \
+through \[NoBreak]\\!\\(160\\)\[NoBreak] in \
+\\\"\[NoBreak]\\!\\(\\\"\
+933262154439441526816992388562667004907159682643816214685929638952175999932299\
+156089414639761565182862536979208272237582511852109168640000000000000000000000\
+00\\\"\\)\[NoBreak]\\\". \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/StringTake\\\", ButtonNote -> \\\"StringTake::take\
+\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.572360087041193*^9, 3.572360102921672*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ToExpression", "::", "notstrbox"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], \
+"\<\"\[NoBreak]\\!\\(StringTake[\\(\\(\\\"\
+933262154439441526816992388562667004907159682643816214685929638952175999932299\
+156089414639761565182862536979208272237582511852109168640000000000000000000000\
+00\\\", \\(\\({160}\\)\\)\\)\\)]\\)\[NoBreak] is not a string or a box. \
+ToExpression can only interpret strings or boxes as Mathematica input. \\!\\(\
+\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ToExpression/notstrbox\\\", ButtonNote -> \
+\\\"ToExpression::notstrbox\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.572360087041193*^9, 3.572360102962682*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"StringTake", "::", "take"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Cannot take positions \[NoBreak]\\!\\(161\\)\[NoBreak] \
+through \[NoBreak]\\!\\(161\\)\[NoBreak] in \
+\\\"\[NoBreak]\\!\\(\\\"\
+933262154439441526816992388562667004907159682643816214685929638952175999932299\
+156089414639761565182862536979208272237582511852109168640000000000000000000000\
+00\\\"\\)\[NoBreak]\\\". \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/StringTake\\\", ButtonNote -> \\\"StringTake::take\
+\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.572360087041193*^9, 3.572360103067223*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[\\(StringTake :: take\\), \\\"MessageName\\\"]\\)\
+\[NoBreak] will be suppressed during this calculation. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/stop\\\", \
+ButtonNote -> \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.572360087041193*^9, 3.5723601031110983`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ToExpression", "::", "notstrbox"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], \
+"\<\"\[NoBreak]\\!\\(StringTake[\\(\\(\\\"\
+933262154439441526816992388562667004907159682643816214685929638952175999932299\
+156089414639761565182862536979208272237582511852109168640000000000000000000000\
+00\\\", \\(\\({161}\\)\\)\\)\\)]\\)\[NoBreak] is not a string or a box. \
+ToExpression can only interpret strings or boxes as Mathematica input. \\!\\(\
+\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ToExpression/notstrbox\\\", ButtonNote -> \
+\\\"ToExpression::notstrbox\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.572360087041193*^9, 3.572360103178842*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[\\(ToExpression :: notstrbox\\), \
+\\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this calculation. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/stop\\\", \
+ButtonNote -> \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.572360087041193*^9, 3.5723601032295218`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["mylist"], "Input",
+ CellChangeTimes->{{3.572300588789587*^9, 3.572300589493042*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "9", ",", "3", ",", "3", ",", "2", ",", "6", ",", "2", ",", "1", ",", "5", 
+   ",", "4", ",", "4", ",", "3", ",", "9", ",", "4", ",", "4", ",", "1", ",", 
+   "5", ",", "2", ",", "6", ",", "8", ",", "1", ",", "6", ",", "9", ",", "9", 
+   ",", "2", ",", "3", ",", "8", ",", "8", ",", "5", ",", "6", ",", "2", ",", 
+   "6", ",", "6", ",", "7", ",", "0", ",", "0", ",", "4", ",", "9", ",", "0", 
+   ",", "7", ",", "1", ",", "5", ",", "9", ",", "6", ",", "8", ",", "2", ",", 
+   "6", ",", "4", ",", "3", ",", "8", ",", "1", ",", "6", ",", "2", ",", "1", 
+   ",", "4", ",", "6", ",", "8", ",", "5", ",", "9", ",", "2", ",", "9", ",", 
+   "6", ",", "3", ",", "8", ",", "9", ",", "5", ",", "2", ",", "1", ",", "7", 
+   ",", "5", ",", "9", ",", "9", ",", "9", ",", "9", ",", "3", ",", "2", ",", 
+   "2", ",", "9", ",", "9", ",", "1", ",", "5", ",", "6", ",", "0", ",", "8", 
+   ",", "9", ",", "4", ",", "1", ",", "4", ",", "6", ",", "3", ",", "9", ",", 
+   "7", ",", "6", ",", "1", ",", "5", ",", "6", ",", "5", ",", "1", ",", "8", 
+   ",", "2", ",", "8", ",", "6", ",", "2", ",", "5", ",", "3", ",", "6", ",", 
+   "9", ",", "7", ",", "9", ",", "2", ",", "0", ",", "8", ",", "2", ",", "7", 
+   ",", "2", ",", "2", ",", "3", ",", "7", ",", "5", ",", "8", ",", "2", ",", 
+   "5", ",", "1", ",", "1", ",", "8", ",", "5", ",", "2", ",", "1", ",", "0", 
+   ",", "9", ",", "1", ",", "6", ",", "8", ",", "6", ",", "4", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", 
+   ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", 
+   "$Failed"}], "}"}]], "Output",
+ CellChangeTimes->{{3.572360089896103*^9, 3.572360106021449*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"Total", "[", "mylist", "]"}]}]], "Input",
+ CellChangeTimes->{{3.572300645043085*^9, 3.572300652288467*^9}, 
+   3.572300688624941*^9, {3.5723601148486443`*^9, 3.5723601195789633`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"648", "+", 
+  RowBox[{"144", " ", "$Failed"}]}]], "Output",
+ CellChangeTimes->{
+  3.572300652984674*^9, {3.572360091169286*^9, 3.572360119811314*^9}}]
+}, Open  ]]
+},
+WindowSize->{740, 652},
+WindowMargins->{{36, Automatic}, {16, Automatic}},
+ShowSelection->True,
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 121, 2, 32, "Input"],
+Cell[681, 24, 185, 4, 28, "Input"],
+Cell[869, 30, 71, 1, 28, "Input"],
+Cell[CellGroupData[{
+Cell[965, 35, 95, 1, 28, InheritFromParent],
+Cell[1063, 38, 256, 4, 63, "Output"]
+}, Open  ]],
+Cell[1334, 45, 134, 2, 28, "Input"],
+Cell[CellGroupData[{
+Cell[1493, 51, 140, 3, 28, "Input"],
+Cell[1636, 56, 138, 3, 28, "Output"]
+}, Open  ]],
+Cell[1789, 62, 320, 6, 80, "Input"],
+Cell[2112, 70, 382, 9, 28, "Input"],
+Cell[CellGroupData[{
+Cell[2519, 83, 349, 9, 28, "Input"],
+Cell[2871, 94, 713, 14, 75, "Message"],
+Cell[3587, 110, 783, 15, 92, "Message"],
+Cell[4373, 127, 713, 14, 75, "Message"],
+Cell[5089, 143, 781, 15, 92, "Message"],
+Cell[5873, 160, 713, 14, 75, "Message"],
+Cell[6589, 176, 559, 11, 24, "Message"],
+Cell[7151, 189, 781, 15, 92, "Message"],
+Cell[7935, 206, 566, 11, 24, "Message"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8538, 222, 98, 1, 28, "Input"],
+Cell[8639, 225, 4218, 57, 420, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12894, 287, 241, 4, 46, "Input"],
+Cell[13138, 293, 174, 4, 62, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

@@ -1,0 +1,65 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      1434,         56]
+NotebookOptionsPosition[      1042,         37]
+NotebookOutlinePosition[      1398,         53]
+CellTagsIndexPosition[      1355,         50]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Prime", "[", "10001", "]"}]], "Input",
+ CellChangeTimes->{{3.5735728101208344`*^9, 3.573572811868536*^9}}],
+
+Cell[BoxData["104743"], "Output",
+ CellChangeTimes->{3.573572812497611*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.573572774150753*^9, 3.573572783486372*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.573572832165948*^9, 3.573572832477668*^9}, {
+  3.573573020209197*^9, 3.573573070953395*^9}}]
+},
+WindowSize->{740, 652},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 130, 2, 28, "Input"],
+Cell[712, 26, 75, 1, 28, "Output"]
+}, Open  ]],
+Cell[802, 30, 92, 1, 28, "Input"],
+Cell[897, 33, 141, 2, 28, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)

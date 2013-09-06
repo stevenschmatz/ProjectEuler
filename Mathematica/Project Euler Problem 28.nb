@@ -1,0 +1,147 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      4457,        137]
+NotebookOptionsPosition[      3836,        111]
+NotebookOutlinePosition[      4192,        127]
+CellTagsIndexPosition[      4149,        124]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"1", ";"}], "\[IndentingNewLine]", 
+ RowBox[{"3", ",", "5", ",", "7", ",", 
+  RowBox[{"9", ";", " ", 
+   RowBox[{"sum", "=", 
+    RowBox[{
+     RowBox[{"3", "+", 
+      RowBox[{"(", 
+       RowBox[{"3", "+", "2"}], ")"}], "+", 
+      RowBox[{"(", 
+       RowBox[{"3", "+", "4"}], ")"}], "+", 
+      RowBox[{"(", 
+       RowBox[{"3", "+", "6"}], ")"}]}], "=", 
+     RowBox[{
+      RowBox[{"4", 
+       RowBox[{"(", "3", ")"}]}], "+", 
+      RowBox[{"2", 
+       RowBox[{"(", "6", ")"}]}]}]}]}], ";"}]}], "\[IndentingNewLine]", 
+ RowBox[{"13", ",", "17", ",", "21", ",", 
+  RowBox[{"25", ";", "\[IndentingNewLine]", "31"}], ",", "37", ",", "43", ",", 
+  RowBox[{"49", ";", "\[IndentingNewLine]", "57"}], ",", "65", ",", "73", ",", 
+  RowBox[{"81", ";"}]}]}], "Input",
+ CellChangeTimes->{{3.578440863439148*^9, 3.5784409260105743`*^9}, 
+   3.578440960844098*^9, {3.578441261114703*^9, 3.5784413218114443`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"0", ";"}], "\[IndentingNewLine]", 
+ RowBox[{"2", ",", "4", ",", "6", ",", 
+  RowBox[{"8", ";"}]}], "\[IndentingNewLine]", 
+ RowBox[{"12", ",", "16", ",", "20", ",", 
+  RowBox[{"24", ";"}]}], "\[IndentingNewLine]", 
+ RowBox[{"30", ",", "36", ",", "42", ","}]}], "Input",
+ CellChangeTimes->{{3.578440962799898*^9, 3.578440981082515*^9}, {
+  3.5784410288024406`*^9, 3.578441029106555*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"\"\<Common difference = n, first number = (n(n-1)+1)\>\"", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", "\"\<For each sequence of \
+4, first number = x, sum = 4x+6n\nwhich equals 4(n(n-1)+1)+6n = \
+4(\!\(\*SuperscriptBox[\(n\), \(2\)]\)-n+1)+6n = 4\!\(\*SuperscriptBox[\(n\), \
+\(2\)]\)+2n+4, where n = diff\>\"", "\[IndentingNewLine]", 
+ RowBox[{"\"\<2x+1\>\"", "=", "1001"}], "\[IndentingNewLine]", 
+ RowBox[{"x", "=", "500"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.578441000166781*^9, 3.578441068226905*^9}, {
+  3.5784411474510202`*^9, 3.578441258091138*^9}, {3.578441334483181*^9, 
+  3.5784413357712803`*^9}, {3.578441533811002*^9, 3.578441657547317*^9}, {
+  3.578441859355959*^9, 3.578441873291198*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"4", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"2", "x"}], ")"}], "2"]}], "+", 
+   RowBox[{"4", "x"}], "+", "4"}]}]], "Input",
+ CellChangeTimes->{{3.578441658561756*^9, 3.578441668002891*^9}, {
+  3.578441706924889*^9, 3.578441711603057*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"sum", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", "=", "1"}], ",", 
+   RowBox[{"i", "\[LessEqual]", "500"}], ",", 
+   RowBox[{"i", "++"}], ",", 
+   RowBox[{"sum", "+=", 
+    RowBox[{"f", "[", "i", "]"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.578441875566285*^9, 3.5784418972913733`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["sum"], "Input",
+ CellChangeTimes->{{3.578441899911373*^9, 3.578441900145234*^9}}],
+
+Cell[BoxData["669171000"], "Output",
+ CellChangeTimes->{3.578441900440159*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sum", "+", "1"}]], "Input",
+ CellChangeTimes->{{3.578441902246029*^9, 3.578441904420259*^9}}],
+
+Cell[BoxData["669171001"], "Output",
+ CellChangeTimes->{3.578441904869671*^9}]
+}, Open  ]]
+},
+WindowSize->{740, 652},
+WindowMargins->{{36, Automatic}, {16, Automatic}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 931, 23, 114, "Input"],
+Cell[1491, 45, 411, 8, 80, "Input"],
+Cell[1905, 55, 757, 11, 133, "Input"],
+Cell[2665, 68, 339, 10, 32, "Input"],
+Cell[3007, 80, 377, 10, 46, "Input"],
+Cell[CellGroupData[{
+Cell[3409, 94, 95, 1, 28, "Input"],
+Cell[3507, 97, 78, 1, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3622, 103, 117, 2, 28, "Input"],
+Cell[3742, 107, 78, 1, 28, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
