@@ -1,3 +1,7 @@
+"""
+Note: this is not all of my work on this problem, and just a script that helped me figure out how to get the answer with logic.
+"""
+
 f = open("keylog.txt", "r")
 
 keylog_list = []
