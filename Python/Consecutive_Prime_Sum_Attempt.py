@@ -1,4 +1,6 @@
 import numpy as np
+import math
+import random
 
 def primesfrom2to(n):
     # http://stackoverflow.com/questions/2068372/fastest-way-to-list-all-primes-below-n-in-python/3035188#3035188
@@ -14,13 +16,35 @@ def primesfrom2to(n):
 
 prime_list=primesfrom2to(10**7)
 
-def isprime(x):
-    count = 0
-    for prime in prime_list:
-        if x % prime == 0:
-            if count == 1:
-                return False
-            count += 1
-    return True
 
-print isprime(7)
+
+def miller_rabin(m, k):
+  s=1
+  t = (m-1)/2
+  while t%2 == 0:
+      t /= 2
+      s += 1
+
+  for r in range(0,k):
+      rand_num = random.randint(1,m-1)
+      y = pow(rand_num, t, m)
+      prime = False
+
+      if (y == 1):
+          prime = True
+
+
+      for i in range(0,s):
+          if (y == m-1):
+              prime = True
+              break
+          else:
+              y = (y*y)%m
+
+      if not prime:
+          return False
+
+  return True
+
+
+print count
