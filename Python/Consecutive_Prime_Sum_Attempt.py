@@ -16,10 +16,11 @@ def primesfrom2to(n):
 
 prime_list=primesfrom2to(10**7)
 
-
-
-def miller_rabin(m, k):
+def miller_rabin(m):
+  if m == 2:
+    return True
   s=1
+  k = 2
   t = (m-1)/2
   while t%2 == 0:
       t /= 2
@@ -46,5 +47,4 @@ def miller_rabin(m, k):
 
   return True
 
-
-print count
+print miller_rabin(123030)
