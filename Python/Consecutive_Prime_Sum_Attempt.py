@@ -46,16 +46,3 @@ def miller_rabin(m):
 
   return True
 
-i = 0
-max_prime_sum = 0
-test_list = []
-while True:
-  max_prime_sum += prime_list[i]
-  if miller_rabin(max_prime_sum):
-    test_list.append(max_prime_sum)
-  if max_prime_sum > 1000000:
-    max_prime_sum -= prime_list[i]
-    break
-  i += 1
-
-print max_prime_sum
