@@ -19,3 +19,21 @@ def isTriangular(k):
 	n_value = 0.5*(-1+(8*k+1)**(0.5))
 	return int(n_value)==n_value
 
+def isPentagonal(k):
+	n_value = (1/6.0)*(1+(24*k+1)**(0.5))
+	return int(n_value)==n_value
+
+def isHexagonal(k):
+	n_value = (1/4.0)*(1+(8*k+1)**(0.5))
+	return int(n_value)==n_value
+
+def isTriPentHex(k):
+	return (isTriangular(k) and isPentagonal(k) and isHexagonal(k))
+
+i = 0
+count = 0
+while count < 3:
+	if isTriPentHex(getTriangular(i)):
+		count += 1
+		print getTriangular(i)
+	i += 1
