@@ -1,3 +1,5 @@
+import freetype
+
 """
 Steven Schmatz
 								Expanded			Secondary diff. 	Tertiary diff.			
