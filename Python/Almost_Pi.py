@@ -6,6 +6,10 @@ import math
 test_n = 200
 test_abcd_list = [6, 75, 89, 226]
 
+# ARGUMENTS
+n = 10000
+
+
 def f(n, k):
     return math.e ** (k / float(n)) - 1
 
@@ -16,3 +20,10 @@ def f_sum(n, abcd_list):
 
 def error(n, abcd_list):
     return f_sum(n, abcd_list) - math.pi
+
+
+new_list = [300, 3750, 4450, 11300]# map(lambda x: x*n/test_n, test_abcd_list)
+
+print 300**2 + 3750**2 + 4450**2 + 11300**2
+
+print error(n, new_list)
