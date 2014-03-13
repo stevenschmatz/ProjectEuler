@@ -1,8 +1,5 @@
-def modular_pow(base, exponent, modulus): #runtime O(e)
-    c = 1
-    for i in range(exponent):
-        c = (c * base) % modulus
-    return c
+
+#modular pow is pow(base, exponent, modulus), no need for function
 
 
 

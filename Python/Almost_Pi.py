@@ -24,6 +24,6 @@ def error(n, abcd_list):
 
 new_list = [300, 3750, 4450, 11300]# map(lambda x: x*n/test_n, test_abcd_list)
 
-print 300**2 + 3750**2 + 4450**2 + 11300**2
-
-print error(n, new_list)
+for x in xrange(100):
+    new_list = [300, 3750, 4450, 11300]
+    print error(n, new_list)
