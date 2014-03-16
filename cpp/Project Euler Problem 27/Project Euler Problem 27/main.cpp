@@ -40,6 +40,6 @@ public:
 int main()
 {
     sol.gen_sieve_primes();
-    std::cout << sol.primes[3] << std::endl;
+    std::cout << sol.primes[32] << std::endl;
     return 0;
 }
