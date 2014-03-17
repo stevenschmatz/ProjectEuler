@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA3D3FF918D1DF10002E33EB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA3D3FF818D1DF10002E33EB /* main.cpp */; };
-		BA3D3FFB18D1DF10002E33EB /* Project_Euler_Problem_27.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = BA3D3FFA18D1DF10002E33EB /* Project_Euler_Problem_27.1 */; };
+		BAA906E918D6804B00118300 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BAA906E818D6804B00118300 /* main.cpp */; };
+		BAA906EB18D6804B00118300 /* Project_Euler_Problem_27.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAA906EA18D6804B00118300 /* Project_Euler_Problem_27.1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BA3D3FF318D1DF10002E33EB /* CopyFiles */ = {
+		BAA906E318D6804B00118300 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				BA3D3FFB18D1DF10002E33EB /* Project_Euler_Problem_27.1 in CopyFiles */,
+				BAA906EB18D6804B00118300 /* Project_Euler_Problem_27.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BA3D3FF518D1DF10002E33EB /* Project Euler Problem 27 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Project Euler Problem 27"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA3D3FF818D1DF10002E33EB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		BA3D3FFA18D1DF10002E33EB /* Project_Euler_Problem_27.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Project_Euler_Problem_27.1; sourceTree = "<group>"; };
+		BAA906E518D6804B00118300 /* Project Euler Problem 27 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Project Euler Problem 27"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA906E818D6804B00118300 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BAA906EA18D6804B00118300 /* Project_Euler_Problem_27.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Project_Euler_Problem_27.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BA3D3FF218D1DF10002E33EB /* Frameworks */ = {
+		BAA906E218D6804B00118300 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,27 +41,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BA3D3FEC18D1DF0F002E33EB = {
+		BAA906DC18D6804B00118300 = {
 			isa = PBXGroup;
 			children = (
-				BA3D3FF718D1DF10002E33EB /* Project Euler Problem 27 */,
-				BA3D3FF618D1DF10002E33EB /* Products */,
+				BAA906E718D6804B00118300 /* Project Euler Problem 27 */,
+				BAA906E618D6804B00118300 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BA3D3FF618D1DF10002E33EB /* Products */ = {
+		BAA906E618D6804B00118300 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BA3D3FF518D1DF10002E33EB /* Project Euler Problem 27 */,
+				BAA906E518D6804B00118300 /* Project Euler Problem 27 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BA3D3FF718D1DF10002E33EB /* Project Euler Problem 27 */ = {
+		BAA906E718D6804B00118300 /* Project Euler Problem 27 */ = {
 			isa = PBXGroup;
 			children = (
-				BA3D3FF818D1DF10002E33EB /* main.cpp */,
-				BA3D3FFA18D1DF10002E33EB /* Project_Euler_Problem_27.1 */,
+				BAA906E818D6804B00118300 /* main.cpp */,
+				BAA906EA18D6804B00118300 /* Project_Euler_Problem_27.1 */,
 			);
 			path = "Project Euler Problem 27";
 			sourceTree = "<group>";
@@ -69,13 +69,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BA3D3FF418D1DF10002E33EB /* Project Euler Problem 27 */ = {
+		BAA906E418D6804B00118300 /* Project Euler Problem 27 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BA3D3FFE18D1DF10002E33EB /* Build configuration list for PBXNativeTarget "Project Euler Problem 27" */;
+			buildConfigurationList = BAA906EE18D6804B00118300 /* Build configuration list for PBXNativeTarget "Project Euler Problem 27" */;
 			buildPhases = (
-				BA3D3FF118D1DF10002E33EB /* Sources */,
-				BA3D3FF218D1DF10002E33EB /* Frameworks */,
-				BA3D3FF318D1DF10002E33EB /* CopyFiles */,
+				BAA906E118D6804B00118300 /* Sources */,
+				BAA906E218D6804B00118300 /* Frameworks */,
+				BAA906E318D6804B00118300 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -83,48 +83,48 @@
 			);
 			name = "Project Euler Problem 27";
 			productName = "Project Euler Problem 27";
-			productReference = BA3D3FF518D1DF10002E33EB /* Project Euler Problem 27 */;
+			productReference = BAA906E518D6804B00118300 /* Project Euler Problem 27 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BA3D3FED18D1DF10002E33EB /* Project object */ = {
+		BAA906DD18D6804B00118300 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Schmatz;
 			};
-			buildConfigurationList = BA3D3FF018D1DF10002E33EB /* Build configuration list for PBXProject "Project Euler Problem 27" */;
+			buildConfigurationList = BAA906E018D6804B00118300 /* Build configuration list for PBXProject "Project Euler Problem 27" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = BA3D3FEC18D1DF0F002E33EB;
-			productRefGroup = BA3D3FF618D1DF10002E33EB /* Products */;
+			mainGroup = BAA906DC18D6804B00118300;
+			productRefGroup = BAA906E618D6804B00118300 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BA3D3FF418D1DF10002E33EB /* Project Euler Problem 27 */,
+				BAA906E418D6804B00118300 /* Project Euler Problem 27 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BA3D3FF118D1DF10002E33EB /* Sources */ = {
+		BAA906E118D6804B00118300 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3D3FF918D1DF10002E33EB /* main.cpp in Sources */,
+				BAA906E918D6804B00118300 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		BA3D3FFC18D1DF10002E33EB /* Debug */ = {
+		BAA906EC18D6804B00118300 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -161,7 +161,7 @@
 			};
 			name = Debug;
 		};
-		BA3D3FFD18D1DF10002E33EB /* Release */ = {
+		BAA906ED18D6804B00118300 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -192,14 +192,14 @@
 			};
 			name = Release;
 		};
-		BA3D3FFF18D1DF10002E33EB /* Debug */ = {
+		BAA906EF18D6804B00118300 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		BA3D400018D1DF10002E33EB /* Release */ = {
+		BAA906F018D6804B00118300 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -209,24 +209,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BA3D3FF018D1DF10002E33EB /* Build configuration list for PBXProject "Project Euler Problem 27" */ = {
+		BAA906E018D6804B00118300 /* Build configuration list for PBXProject "Project Euler Problem 27" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA3D3FFC18D1DF10002E33EB /* Debug */,
-				BA3D3FFD18D1DF10002E33EB /* Release */,
+				BAA906EC18D6804B00118300 /* Debug */,
+				BAA906ED18D6804B00118300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA3D3FFE18D1DF10002E33EB /* Build configuration list for PBXNativeTarget "Project Euler Problem 27" */ = {
+		BAA906EE18D6804B00118300 /* Build configuration list for PBXNativeTarget "Project Euler Problem 27" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BA3D3FFF18D1DF10002E33EB /* Debug */,
-				BA3D400018D1DF10002E33EB /* Release */,
+				BAA906EF18D6804B00118300 /* Debug */,
+				BAA906F018D6804B00118300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BA3D3FED18D1DF10002E33EB /* Project object */;
+	rootObject = BAA906DD18D6804B00118300 /* Project object */;
 }
